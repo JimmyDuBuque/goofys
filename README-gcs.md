@@ -26,4 +26,4 @@ GOOGLE_APPLICATION_CREDENTIALS="/path/to/creds.json" goofys gs://[BUCKET] /path/
 
 ```
 goofys gs://[BUCKET] [MOUNT DIRECTORY]
-```
+``` 
