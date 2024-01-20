@@ -1,4 +1,4 @@
-#!/bin/bash
+# /bin/bash
 
 set -o xtrace
 set -o errexit
@@ -15,7 +15,7 @@ TEST_DIR=testdir
 ALT_TEST_TEXT_FILE=test-s3fs-ALT.txt
 TEST_TEXT_FILE_LENGTH=15
 BIG_FILE=big-file-s3fs.txt
-BIG_FILE_LENGTH=$((25 * 1024 * 1024))
+BIG_FILE_LENGTH=$((25   1024   1024))
 
 function mk_test_file {
     if [ $# == 0 ]; then
@@ -503,3 +503,4 @@ run_all_tests
 # Unmount the bucket
 popd
 echo "All tests complete."
+ 
