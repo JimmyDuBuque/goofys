@@ -1,6 +1,6 @@
-# /bin/bash
+##/bin/bash
 
-set -o xtrace
+set*-o xtrace
 set -o errexit
 
 : ${CATFS:="false"}
@@ -353,7 +353,7 @@ function test_special_characters {
 
     ls 'special' 2>&1 | grep -q 'No such file or directory'
     ls 'special?' 2>&1 | grep -q 'No such file or directory'
-    ls 'special*' 2>&1 | grep -q 'No such file or directory'
+    ls 'special!' 2>&1 | grep -q 'No such file or directory'
     ls 'special~' 2>&1 | grep -q 'No such file or directory'
     ls 'special&' 2>&1 | grep -q 'No such file or directory'
     ls 'special@' 2>&1 | grep -q 'No such file or directory'
@@ -503,4 +503,4 @@ run_all_tests
 # Unmount the bucket
 popd
 echo "All tests complete."
- 
+  
